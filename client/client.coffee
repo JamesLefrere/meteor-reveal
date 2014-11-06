@@ -1,5 +1,7 @@
 Template.reveal.rendered = ->
   Meteor.setTimeout(->
+    if Sections.find().fetch().length is 0
+      return console.log "We require more slides"
     Reveal.initialize(
       loop: true
       controls: true
