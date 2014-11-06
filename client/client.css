@@ -1,0 +1,13 @@
+#list > li {
+  padding: 10px;
+  border: 1px solid #bbb;
+  margin: 8px;
+  font-weight: bold;
+  cursor: move;
+  background: #eee;
+}
+
+.remove {
+  margin-left: 2em;
+  color: red;
+}

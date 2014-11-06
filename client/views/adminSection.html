@@ -1,0 +1,10 @@
+<template name="adminSection">
+  {{#with section}}
+  <div class="container">
+    <h1>Editing {{title}}</h1>
+    {{#linkTo route="admin"}}Back to sections{{/linkTo}}
+    <hr>
+    {{> quickForm collection="Sections" doc=this type="update"}}
+  </div>
+  {{/with}}
+</template>

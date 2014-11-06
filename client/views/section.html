@@ -1,0 +1,22 @@
+<template name="section">
+  {{#if subsections}}
+  <section>
+    {{> sectionContent}}
+    {{#each subsections}}
+      {{> section}}
+    {{/each}}
+  </section>
+  {{else}}
+    {{> sectionContent}}
+  {{/if}}
+</template>
+
+<template name="sectionContent">
+  <section>
+    <h1>{{title}}</h1>
+    <h2>{{subTitle}}</h2>
+    <div class="body">
+      {{{body}}}
+    </div>
+  </section>
+</template>

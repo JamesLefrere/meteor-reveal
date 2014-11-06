@@ -1,0 +1,24 @@
+<template name="adminOrder">
+  <div class="container">
+    <h1>Order sections</h1>
+    {{#linkTo route="admin"}}Back to sections{{/linkTo}}
+    <hr>
+    <h2>Sections</h2>
+    <ul id="list">
+      {{#each sections}}
+      <li>
+        {{#linkTo route="adminSection"}}{{title}}{{/linkTo}}
+        <span class="remove">x</span>
+        <ul>
+          {{#each subsections}}
+            <li>
+              {{#linkTo route="adminSection"}}{{title}}{{/linkTo}}
+              <span class="remove">x</span>
+            </li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

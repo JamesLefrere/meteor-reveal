@@ -1,0 +1,9 @@
+<template name="admin">
+  <div class="container">
+    <h1>Sections</h1>
+    {{#linkTo route="adminOrder"}}Order sections{{/linkTo}}
+    <hr>
+    <h2>Add section</h2>
+    {{> quickForm collection="Sections" type="insert"}}
+  </div>
+</template>
